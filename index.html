@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tryvirtul.com – 3D Jigsaw Puzzle</title>
+    <meta
+      name="description"
+      content="3D Jigsaw Puzzle is the implementation of the classic jigsaw puzzle with beautiful and realistic 3D graphics. Experience the joy of assembling stunning 3D puzzles with immersive gameplay and challenging levels."
+    />
+    <meta
+      name="keywords"
+      content="Board, Casual, Educational, Family, Jigsaw, Simulation"
+    />
+    <link rel="icon" type="image/x-icon" href="./pict/Puzzle-512.jpg" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>3D Jigsaw Puzzle</h1>
+          <p>
+            Experience the classic jigsaw puzzle reimagined in stunning 3D
+            graphics. Assemble beautiful puzzles piece by piece with immersive
+            gameplay and challenging levels that will test your spatial
+            awareness and patience.
+          </p>
+          <button class="cta-button" onclick="scrollToHowToPlay()">
+            How to Play
+          </button>
+        </div>
+        <div class="hero-image">
+          <img src="./pict/Puzzle-hero.jpg" alt="3D Jigsaw Puzzle Game" />
+        </div>
+      </section>
+
+      <!-- Game Features Section -->
+      <section class="features" id="features">
+        <div class="container">
+          <h2>Game Features</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">🧩</div>
+              <h3>3D Puzzle Assembly</h3>
+              <p>
+                Experience puzzles in three dimensions with realistic graphics
+                and intuitive controls that make assembly feel natural and
+                engaging.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🎨</div>
+              <h3>Beautiful Graphics</h3>
+              <p>
+                Enjoy stunning 3D visuals with detailed textures and lighting
+                that bring each puzzle piece to life.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📚</div>
+              <h3>Educational Value</h3>
+              <p>
+                Improve spatial reasoning, problem-solving skills, and patience
+                while having fun with family-friendly content.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🏆</div>
+              <h3>Multiple Difficulty Levels</h3>
+              <p>
+                From beginner-friendly puzzles to complex challenges that will
+                test even the most experienced puzzle enthusiasts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How to Play Section -->
+      <section class="how-to-play">
+        <div class="container">
+          <div class="how-to-content">
+            <div class="how-to-text">
+              <h2>How to Play</h2>
+              <div class="instructions">
+                <div class="instruction-item">
+                  <h3>🎮 Controls</h3>
+                  <p>
+                    Use your mouse to drag and drop puzzle pieces. Click to
+                    select pieces and rotate them for the perfect fit.
+                  </p>
+                </div>
+                <div class="instruction-item">
+                  <h3>🎯 Objectives</h3>
+                  <p>
+                    Complete each puzzle by fitting all pieces together
+                    correctly. Look for matching edges and patterns to solve the
+                    challenge.
+                  </p>
+                </div>
+                <div class="instruction-item">
+                  <h3>🏆 Tips</h3>
+                  <p>
+                    Start with corner and edge pieces to establish the frame.
+                    Group similar colors and patterns together for easier
+                    assembly.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="how-to-image">
+              <img
+                src="./pict/Puzzle-sect1.jpg"
+                alt="How to play 3D Jigsaw Puzzle"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Puzzle Categories Section -->
+      <section class="puzzle-categories">
+        <div class="container">
+          <div class="categories-content">
+            <div class="categories-text">
+              <h2>Diverse Puzzle Collection</h2>
+              <p>
+                Explore various themed puzzles that offer unique challenges and
+                beautiful artwork. Each category provides a different
+                experience:
+              </p>
+              <ul>
+                <li>
+                  <strong>Nature Puzzles:</strong> Beautiful landscapes and
+                  wildlife scenes
+                </li>
+                <li>
+                  <strong>City Puzzles:</strong> Urban architecture and street
+                  scenes
+                </li>
+                <li>
+                  <strong>Art Puzzles:</strong> Famous paintings and artistic
+                  masterpieces
+                </li>
+                <li>
+                  <strong>Fantasy Puzzles:</strong> Imaginative and creative
+                  designs
+                </li>
+              </ul>
+            </div>
+            <div class="categories-image">
+              <img
+                src="./pict/Puzzle-sect2.jpg"
+                alt="Diverse puzzle collection"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews Section -->
+      <section class="reviews">
+        <div class="container">
+          <h2>Player Reviews</h2>
+          <div class="reviews-grid" id="reviews-container">
+            <!-- Reviews will be loaded from JSON -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+      <div class="cookie-content">
+        <p>
+          We use cookies to enhance your gaming experience. By continuing to use
+          this site, you agree to our use of cookies.
+        </p>
+        <button id="accept-cookies" class="cookie-button">Accept</button>
+      </div>
+    </div>
+
+    <script src="./js/builder.js"></script>
+    <script src="./js/cookie-banner.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

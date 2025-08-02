@@ -1,0 +1,371 @@
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 80vh;
+  background: url("../pict/Puzzle-hero.jpg") center/cover no-repeat;
+  padding: var(--spacing-xl) 0;
+  gap: var(--spacing-xl);
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(99, 102, 241, 0.7);
+  z-index: 1;
+  animation: overlayPulse 3s ease-in-out infinite;
+}
+
+@keyframes overlayPulse {
+  0%,
+  100% {
+    background: rgba(99, 102, 241, 0.6);
+  }
+  50% {
+    background: rgba(99, 102, 241, 0.8);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+  text-align: right;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-lg);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.hero-image {
+  display: none;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+  transition: var(--transition);
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+  padding: var(--spacing-xxl) 0;
+  background: var(--background-white);
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  justify-content: center;
+}
+
+.feature-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background: var(--background-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  text-align: center;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+  border-color: var(--primary-color);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.feature-card h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* How to Play Section */
+.how-to-play {
+  padding: var(--spacing-xxl) 0;
+  background: var(--background-light);
+}
+
+.how-to-content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.how-to-text {
+  flex: 1;
+}
+
+.how-to-text h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-lg);
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.instruction-item {
+  background: var(--background-white);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  transition: var(--transition);
+  border-left: 4px solid var(--primary-color);
+}
+
+.instruction-item:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-medium);
+}
+
+.instruction-item h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-xs);
+}
+
+.how-to-image {
+  flex: 1;
+  text-align: center;
+}
+
+.how-to-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+  transition: var(--transition);
+}
+
+.how-to-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Puzzle Categories Section */
+.puzzle-categories {
+  padding: var(--spacing-xxl) 0;
+  background: var(--background-white);
+}
+
+.categories-content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.categories-text {
+  flex: 1;
+}
+
+.categories-text h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-lg);
+}
+
+.categories-text p {
+  margin-bottom: var(--spacing-md);
+  color: var(--text-light);
+}
+
+.categories-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categories-text li {
+  background: var(--background-light);
+  padding: var(--spacing-sm) var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--accent-color);
+  transition: var(--transition);
+}
+
+.categories-text li:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateX(5px);
+}
+
+.categories-text li:last-child {
+  margin-bottom: 0;
+}
+
+.categories-image {
+  flex: 1;
+  text-align: center;
+}
+
+.categories-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+  transition: var(--transition);
+}
+
+.categories-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Reviews Section */
+.reviews {
+  padding: var(--spacing-xxl) 0;
+  background: var(--background-light);
+}
+
+.reviews h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  color: var(--primary-color);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.review-card {
+  background: var(--background-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  transition: var(--transition);
+  border: 2px solid transparent;
+  animation: cardFloat 3s ease-in-out infinite;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+  border-color: var(--accent-color);
+}
+
+@keyframes cardFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.review-author {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.1rem;
+}
+
+.review-text {
+  color: var(--text-light);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-lg) 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .how-to-content {
+    flex-direction: column;
+  }
+
+  .categories-content {
+    flex-direction: column;
+  }
+
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    max-width: 100%;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-card {
+    margin: 0 var(--spacing-sm);
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .feature-card,
+  .review-card {
+    padding: var(--spacing-md);
+  }
+}
